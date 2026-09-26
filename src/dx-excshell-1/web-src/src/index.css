@@ -1,0 +1,58 @@
+/*
+* <license header>
+*/
+
+
+html,
+body {
+  margin: 0;
+}
+
+/** Custom Sidebar Styling **/
+.SideNav {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 0px;
+  padding: var(--spectrum-global-dimension-size-100);
+  outline: none;
+  height: 100%;
+  /* Yellow left panel */
+  background-color: #ffd400;
+}
+
+.SideNav-item {
+  list-style-type: none;
+  margin: var(--spectrum-global-dimension-size-50) 0;
+}
+
+.SideNav-itemLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: var(--spectrum-alias-single-line-height, var(--spectrum-global-dimension-size-400));
+  padding: var(--spectrum-global-dimension-size-65) var(--spectrum-global-dimension-size-150);
+  border-radius: var(--spectrum-alias-border-radius-regular, var(--spectrum-global-dimension-size-50));
+  font-size: var(--spectrum-alias-font-size-default, var(--spectrum-global-dimension-font-size-100));
+  font-weight: var(--spectrum-global-font-weight-regular, 400);
+  font-style: normal;
+  text-decoration: none;
+  word-break: break-word;
+  cursor: pointer;
+  background-color: transparent;
+  /* Dark text for contrast against yellow */
+  color: #1f1f00;
+}
+
+.SideNav-itemLink:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: #000000;
+}
+
+.SideNav-itemLink.is-selected {
+  color: #000000;
+  font-weight: var(--spectrum-global-font-weight-bold, 700);
+  background-color: rgba(0, 0, 0, 0.12);
+}
