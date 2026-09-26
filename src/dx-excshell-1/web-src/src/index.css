@@ -16,8 +16,8 @@ body {
   padding: var(--spectrum-global-dimension-size-100);
   outline: none;
   height: 100%;
-  /* Yellow left panel */
-  background-color: #ffd400;
+  /* Blue left panel */
+  background-color: #1473e6;
 }
 
 .SideNav-item {
@@ -42,17 +42,17 @@ body {
   word-break: break-word;
   cursor: pointer;
   background-color: transparent;
-  /* Dark text for contrast against yellow */
-  color: #1f1f00;
+  /* Light text for contrast against blue */
+  color: #ffffff;
 }
 
 .SideNav-itemLink:hover {
-  background-color: rgba(0, 0, 0, 0.08);
-  color: #000000;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
 .SideNav-itemLink.is-selected {
-  color: #000000;
+  color: #ffffff;
   font-weight: var(--spectrum-global-font-weight-bold, 700);
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.25);
 }
